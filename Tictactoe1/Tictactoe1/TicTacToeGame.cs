@@ -12,6 +12,13 @@ namespace Tictactoe1
                 board[i] = '_';
             }
         }
-        
+        public void ChooseXorO()
+        {
+            Console.Write("Enter X or O : ");
+            char UserChoice = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine(char.ToUpper(UserChoice));
+
+        }
+
     }
 }
