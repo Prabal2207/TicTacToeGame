@@ -9,7 +9,7 @@ namespace Tictactoe1
             Console.WriteLine("Welcome to tictactoe!");
             TicTacToeGame obj = new TicTacToeGame();
             obj.tictactoe();
-            //obj.ChooseXorO();
+            obj.ChooseXorO();
 
             Console.ReadKey();
 

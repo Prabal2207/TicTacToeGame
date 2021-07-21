@@ -17,6 +17,20 @@ namespace Tictactoe1
             Console.Write("Enter X or O : ");
             char UserChoice = Convert.ToChar(Console.ReadLine());
             Console.WriteLine(char.ToUpper(UserChoice));
+            if (UserChoice == 'X')
+            {
+                Console.WriteLine("Player's letter is X.");
+                
+            }
+            else if (UserChoice == 'O')
+            {
+                Console.WriteLine("Player's letter is O.");
+                
+            }
+            else
+            {
+                Console.WriteLine("Error. You have to choose X or O only.");
+            }
 
         }
 
