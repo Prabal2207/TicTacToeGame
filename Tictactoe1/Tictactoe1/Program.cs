@@ -10,6 +10,7 @@ namespace Tictactoe1
             TicTacToeGame obj = new TicTacToeGame();
             obj.tictactoe();
             obj.ChooseXorO();
+            obj.boardgame();
 
             Console.ReadKey();
 
