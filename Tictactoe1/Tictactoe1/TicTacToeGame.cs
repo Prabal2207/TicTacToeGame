@@ -3,17 +3,18 @@ namespace Tictactoe1
 {
     public class TicTacToeGame
     {
-        char[] board;
-       public void tictactoe()
+       public char[] board = new char[10];
+        public char[] tictactoe()
         {
-            char[] board = new char[10];
+             
             for(int i=1;i<10;i++)
             {
-                board[i] = '_';
+                board[i] = ' ';
             }
+            return board;
             
         }
-        public void ChooseXorO()
+        public char ChooseXorO()
         {
             Console.Write("Enter X or O : ");
             char UserChoice = Convert.ToChar(Console.ReadLine());
@@ -32,21 +33,23 @@ namespace Tictactoe1
             {
                 Console.WriteLine("Error. You have to choose X or O only.");
             }
+            return UserChoice;
         }
-            public void boardgame()
+            public void boardgame(char[] board)
 
             {
 
+             Console.WriteLine("     |     |      ");
+             Console.WriteLine("  {0}  |  {1}  |  {2}", board[1], board[2], board[3]);
+             Console.WriteLine("_____|_____|_____ ");
+             Console.WriteLine("     |     |      ");
+             Console.WriteLine("  {0}  |  {1}  |  {2}", board[4], board[5], board[6]);
+             Console.WriteLine("_____|_____|_____ ");
+             Console.WriteLine("     |     |      ");
+             Console.WriteLine("  {0}  |  {1}  |  {2}", board[7], board[8], board[9]);
+             Console.WriteLine("     |     |      ");
 
-            Console.WriteLine("     |     |     ");
-            Console.WriteLine("     |     |     ");
-            Console.WriteLine("_____|_____|_____");
-            Console.WriteLine("     |     |     ");
-            Console.WriteLine("     |     |     ");
-            Console.WriteLine("_____|_____|_____");
-            Console.WriteLine("     |     |     ");
-            Console.WriteLine("     |     |     ");
-        }
+            }
 
         
 

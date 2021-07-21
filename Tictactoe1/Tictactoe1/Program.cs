@@ -7,10 +7,13 @@ namespace Tictactoe1
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to tictactoe!");
+            char[] board;
             TicTacToeGame obj = new TicTacToeGame();
-            obj.tictactoe();
+            board = obj.tictactoe();
             obj.ChooseXorO();
-            obj.boardgame();
+            obj.boardgame(board);
+
+
 
             Console.ReadKey();
 
